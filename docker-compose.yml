@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  redis:
+    image: redis:latest
+    container_name: scheduler-redis
+    ports:
+      - "6379:6379"
+    restart: unless-stopped
+
+  postgres:
+    image: postgres:17
+    container_name: scheduler-postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: scheduler
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+volumes:
+  postgres-data:

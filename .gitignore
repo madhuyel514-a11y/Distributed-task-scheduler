@@ -1,0 +1,44 @@
+# Binaries
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binaries
+*.test
+
+# Go coverage
+*.out
+coverage.out
+
+# Build directories
+bin/
+dist/
+build/
+
+# Dependency directories (if any)
+vendor/
+
+# Environment files
+.env
+.env.*
+
+# Logs
+*.log
+logs/
+
+# IDE files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.swp
+
+# Docker volumes/data
+postgres-data/
