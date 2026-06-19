@@ -518,24 +518,3 @@ FROM tasks;
   * Report generation
   * External API jobs
   * AI inference tasks
-
----
-
-# 💼 Resume Description
-
-**Distributed Task Scheduler**
-**Tech Stack:** Go, Redis, PostgreSQL, Docker, REST APIs, Concurrency
-
-* Engineered a distributed task scheduling platform that accepts tasks via REST APIs, persists metadata in PostgreSQL, and dispatches tasks asynchronously through Redis-backed queues.
-* Built concurrent worker pools using Go goroutines to process tasks in parallel, supporting multi-process execution and producer-consumer synchronization patterns.
-* Implemented retry mechanisms, task state management, and Dockerized services, demonstrating distributed systems design, fault tolerance, and reliability engineering.
-
----
-
-# 📄 License
-
-This project is licensed under the MIT License.
-
----
-
-⭐ If you found this project interesting, consider giving it a star!
